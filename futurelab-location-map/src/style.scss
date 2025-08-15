@@ -1,0 +1,56 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+@import 'variables.scss';
+
+.wp-block-create-block-futurelab-location-map {
+	
+	.futurelab-location-map {
+		display: table;
+		width: 100%;
+		
+		.wrap-futurelab-location-map {
+			box-sizing: border-box;
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+			@include breakpointMdMin {
+				float: right;
+				width: 66.66%;
+			}
+			.map-section {
+				min-height: 300px;
+				width: 100%;
+			}
+		}
+		
+		.wrap-futurelab-location-info {
+			box-sizing: border-box;
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+			@include breakpointMdMin {
+				margin-bottom: 50px;
+				float: right;
+				padding-left: 50px;
+				padding-right: 20px;
+				width: 33.33%;
+			}
+			.flbox-centre {
+				margin-bottom: 10px;
+				ul {
+					margin: 0;
+					padding: 0;
+					li {
+						list-style-type: none;
+					}
+				}
+			}
+		}
+		
+	}
+}

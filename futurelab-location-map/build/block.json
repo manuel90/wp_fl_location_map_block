@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "create-block/futurelab-location-map",
+  "version": "0.1.0",
+  "title": "FL Location Map",
+  "category": "widgets",
+  "icon": "format-image",
+  "description": "Creates an location map information section.",
+  "example": {},
+  "supports": {
+    "html": false
+  },
+  "textdomain": "activator",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js",
+  "attributes": {
+    "website": {
+      "type": "string"
+    },
+    "slug_location": {
+      "type": "string"
+    },
+    "selected_centre": {
+      "type": "object",
+      "default": {}
+    }
+  }
+}
