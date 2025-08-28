@@ -20,8 +20,8 @@ function my_block_enqueue_google_maps() {
     if ( has_block( 'create-block/futurelab-location-map' ) ) {
         wp_enqueue_script(
             'google-maps',
-            //'https://maps.googleapis.com/maps/api/js?key=AIzaSyBdQIjEPJnwYOD0dsAFHR2R7Nld-GNFL84&callback=initMapLocationMapInit',
-			'https://maps.googleapis.com/maps/api/js?key=AIzaSyD7HJ4msrNzvvoxQlAdWqRpk_WoirvrMYI&loading=async',
+            //'https://maps.googleapis.com/maps/api/js?key={YOUR-API-MAP-KEY}&callback=initMapLocationMapInit',
+			'https://maps.googleapis.com/maps/api/js?key={YOUR-API-MAP-KEY}&loading=async',
             array(),
             null,
             array()
